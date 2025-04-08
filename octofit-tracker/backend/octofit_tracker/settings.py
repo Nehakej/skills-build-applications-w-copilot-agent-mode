@@ -37,9 +37,9 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "corsheaders",
+    "octofit_tracker",  # Ensure the main app is included
 ]
-
-INSTALLED_APPS += ["tracker_app", "corsheaders"]
 
 MIDDLEWARE = [
     "corsheaders.middleware.CorsMiddleware",
